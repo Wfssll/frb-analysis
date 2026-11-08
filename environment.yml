@@ -1,0 +1,21 @@
+name: frb-analysis
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.10.19
+  - numpy=1.26.4
+  - scipy=1.15.2
+  - matplotlib-base=3.10.6
+  - pyccl=3.2.1
+  - camb=1.6.4
+  - astropy=6.1.7
+  - emcee=3.1.6
+  - pip
+  - pip:
+      - getdist==1.7.4
+      - dynesty==3.0.0
+      - h5py==3.15.1
+      - seaborn==0.13.2
+      - scikit-learn==1.7.2
+      - git+https://github.com/CHIMEFRB/chimefrb-selection.git@b20bb28438e2bcd4bfed5d5e51fa96a20eb7a464

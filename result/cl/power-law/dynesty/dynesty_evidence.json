@@ -1,0 +1,53 @@
+{
+  "name": "frb_redshift",
+  "n_params": 5,
+  "param_names": [
+    "alpha",
+    "b_frb",
+    "k_cut",
+    "N_ell",
+    "dm_host"
+  ],
+  "logZ": -25.050580085400792,
+  "logZ_err": 0.046303742637041595,
+  "chi2_min": 41.284064775501804,
+  "chi2_red": 0.8425319341939144,
+  "dof": 49,
+  "AIC": 51.284064775501804,
+  "BIC": 61.22898500832318,
+  "data_num": 54,
+  "dlogz_init": 0.01,
+  "maxcall": 600000,
+  "constraints": {
+    "alpha": {
+      "median": 0.5112451244301154,
+      "minus": 0.3317606345787542,
+      "plus": 0.46651761096915956
+    },
+    "b_frb": {
+      "median": 1.1633375724853803,
+      "minus": 0.33948614711481007,
+      "plus": 0.4508572660181309
+    },
+    "k_cut": {
+      "median": 5.892150188578264,
+      "minus": 2.923604918769951,
+      "plus": 2.7826975689758386
+    },
+    "N_ell": {
+      "median": 1.3288665208773125,
+      "minus": 0.43935817391487875,
+      "plus": 0.4490897144533519
+    },
+    "dm_host": {
+      "median": 148.14844128029074,
+      "minus": 66.27252875032255,
+      "plus": 67.58488421580626
+    }
+  },
+  "dataset": "astra/cl",
+  "delay_model": "powerlaw",
+  "model": "powerlaw",
+  "mcmc_mode": "cl",
+  "cl_bandpower": true
+}

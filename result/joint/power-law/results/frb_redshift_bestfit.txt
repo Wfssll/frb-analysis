@@ -1,0 +1,39 @@
+# delay model: powerlaw
+# mcmc_mode: joint
+# igm_model: macquart
+# SFH: Madau & Fragos 2017
+# chain burn-in is 30% = 15000 of 50000 steps per walker
+delay_model  powerlaw
+mcmc_mode  joint
+igm_model  macquart
+alpha  0.152000
+mu_host  4.583000
+sigma_host  1.201000
+dm_host_mean  201.180095
+F  0.132000
+b_frb  1.073000
+b_e  1.000000
+ell_loc  1000.000000
+k_cut  6.497000
+k_cut_mpc_inv  6.497000
+N_ell  1.334000
+chi2_cl  41.543023
+chi2_dm  46668.515554
+chi2_tot  46710.058577
+fit_ell_loc  0
+fit_k_cut  1
+fit_n_ell  1
+fit_dm_host  0
+fit_b_frb  1
+fit_beta_frb  0
+fit_b_e  0
+fit_host_ln  1
+fit_host_gauss  0
+fit_F  1
+burn_in_frac  0.300
+burn_in_steps_per_walker  15000
+n_steps_per_walker  50000
+n_cl 54
+n_frb 3219
+n_data 3273
+samples BGS LRG DM

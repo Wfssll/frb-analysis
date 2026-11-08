@@ -1,0 +1,53 @@
+{
+  "name": "frb_dmz",
+  "n_params": 5,
+  "param_names": [
+    "tau_NL",
+    "sigma_NL",
+    "mu_host",
+    "sigma_host",
+    "F"
+  ],
+  "logZ": -23330.92410079077,
+  "logZ_err": 0.09046980173165114,
+  "chi2_min": 46637.76471546499,
+  "chi2_red": 14.51081665073584,
+  "dof": 3214,
+  "AIC": 46647.76471546499,
+  "BIC": 46678.14884562149,
+  "data_num": 3219,
+  "dlogz_init": 0.01,
+  "maxcall": 600000,
+  "constraints": {
+    "tau_NL": {
+      "median": 3.892053570948372,
+      "minus": 0.516634537378112,
+      "plus": 0.7882112988086982
+    },
+    "sigma_NL": {
+      "median": 0.6979083392624538,
+      "minus": 0.10672253957506728,
+      "plus": 0.13977621303084609
+    },
+    "mu_host": {
+      "median": 4.1513729657639775,
+      "minus": 0.19999405061408604,
+      "plus": 0.16141744740483244
+    },
+    "sigma_host": {
+      "median": 1.2309344152441586,
+      "minus": 0.06678964681754951,
+      "plus": 0.05548041268654247
+    },
+    "F": {
+      "median": 0.1917795254669732,
+      "minus": 0.0284400027842317,
+      "plus": 0.03411038513524092
+    }
+  },
+  "dataset": "astra/dmz",
+  "delay_model": "lognormal",
+  "model": "lognormal",
+  "mcmc_mode": "dmz",
+  "cl_bandpower": false
+}

@@ -1,0 +1,56 @@
+mcmc_mode: joint
+delay model: sfh
+igm_model: macquart
+chain burn-in: first 30% (15000 of 50000 steps) removed from every walker before flattening
+MCMC median from results.txt:  SFH
+posterior MAP (chain):         SFH  chain_chi2=47227.0748
+N_FRB = 3218  DM_EG min = 11.7118  DMMEAN = 578.492
+mu_host median=3.162000  MAP=3.201537
+sigma_host median=0.892000  MAP=0.893640
+DM_host mean median=35.157290  MAP=36.628716
+F median=0.496000  MAP=0.499985
+ln L_DM median=-23591.516295  MAP=-23590.914309
+chi2_DM median=47183.032590  MAP=47181.828618
+enabled samples: BGS, LRG, DM
+MCMC likelihood: NaMaster bandpower windows
+review likelihood: dense theory convolved with exact NaMaster windows
+MCMC median from results.txt:  SFH  b_frb=1.777000 (results.txt)  beta_frb=0.000000 (0)  b_e=1.000000 (npz)  ell_loc=1000 (npz)  k_cut=4.42 Mpc^-1 (results.txt)  N_ell=1.294 (results.txt)  DM_host=35.16 (mu_host,sigma_host)
+posterior MAP (chain):         SFH  b_frb=0.533596  beta_frb=0.000000  b_e=1.000000  ell_loc=1000  k_cut=0.6953 Mpc^-1  N_ell=1.286  DM_host=36.63  chain_chi2=47227.0748
+fiducial:  p(z)=z^2*exp(-6.7*z)  b_frb=1.0  b_e=1.0  ell_loc=1000  k_cut=1.111 Mpc^-1  N_ell=0  DM_host=150
+PER-BIN VALUES BELOW ARE WINDOWED AND USE DIAGONAL BLOCKS ONLY; THEY ARE NOT ADDITIVE JOINT CONTRIBUTIONS.
+residual_chi2 = null_chi2 - MAP_chi2
+delta_chi2    = null_chi2 - median_chi2
+
+sample z_bin             fiducial_chi2    median_chi2       MAP_chi2  residual_chi2      null_chi2     delta_chi2
+BGS    [0.0, 0.1]               8.8458         8.6698         8.2014         3.0842        11.2856         2.6157
+BGS    [0.1, 0.2]              11.9689        10.3088        12.9244        -2.4458        10.4786         0.1698
+BGS    [0.2, 0.3]               6.2065         5.6648         4.1298         7.7307        11.8605         6.1957
+BGS    [0.3, 0.4]               5.1356         4.3160         4.3356         3.9896         8.3251         4.0091
+LRG    [0.40, 0.55]             1.1276         0.7902         0.6446         3.3247         3.9692         3.1790
+LRG    [0.55, 0.72]             3.6334         7.4237         5.9312        -3.6272         2.3040        -5.1197
+LRG    [0.72, 0.86]             2.8402         3.6570         2.8294         1.2514         4.0808         0.4239
+LRG    [0.86, 1.02]             1.9378         2.8140         1.6631         1.2932         2.9563         0.1424
+DM     auto                    14.2215         5.4974         5.5618         8.9570        14.5188         9.0214
+
+JOINT WINDOWED TOTAL (selected full cross_cov_joint; post-fit review):
+JOINT  windowed                53.4863        46.5050        45.2681        17.6858        62.9539        16.4488
+
+JOINT CHI2 COMPARISON (same parameters and full covariance):
+parameter_set          ell_eff_chi2    windowed_chi2 windowed-minus-eff
+fiducial                  53.662243        53.486310          -0.175933
+posterior median          45.914315        46.505026           0.590711
+posterior MAP             44.959399        45.268075           0.308675
+
+largest |residual_chi2|: DM  null_chi2=14.5188  MAP_chi2=5.5618  residual_chi2=8.9570
+largest delta_chi2:      DM  null_chi2=14.5188  median_chi2=5.4974  delta_chi2=9.0214
+WINDOWED JOINT residual_chi2 = chi2_null - chi2_MAP = 17.6858
+chi2_Cl(ell_eff) MAP=44.9594  median=45.9143
+chi2_DM MAP=47181.8286  median=47183.0326
+chi2_tot = chi2_Cl(ell_eff)+chi2_DM  MAP=47226.7880  median=47228.9469
+chain MAP chi2 = 47227.0748  (joint: chi2_Cl + chi2_DM)
+results.txt chi2_min = 47227.0750
+
+chi2_tot = chi2_Cl + chi2_DM;  chi2_DM = -2 ln L_DM
+chi2_Cl_ell_eff median=45.914315  MAP=44.959399
+chi2_DM median=47183.032590  MAP=47181.828618  ln L_DM median=-23591.516295  MAP=-23590.914309
+chi2_tot ell_eff+DM median=47228.946905  MAP=47226.788018

@@ -1,0 +1,16 @@
+mcmc_mode: dmz
+delay model: lognormal
+igm_model: macquart
+chain burn-in: first 30% (15000 of 50000 steps) removed from every walker before flattening
+MCMC median from results.txt:  tau_NL=3.853000  sigma_NL=0.692000
+posterior MAP (chain):         tau_NL=3.780213  sigma_NL=0.673066  chain_chi2=46637.7217
+N_FRB = 3218  DM_EG min = 11.7118  DMMEAN = 578.492
+mu_host median=4.139000  MAP=4.109960
+sigma_host median=1.229000  MAP=1.236345
+DM_host mean median=133.515890  MAP=130.873835
+F median=0.193000  MAP=0.192262
+ln L_DM median=-23318.940267  MAP=-23318.860851
+chi2_DM median=46637.880533  MAP=46637.721702
+chi2_Cl(ell_eff): n/a (dmz)
+chi2_tot = chi2_DM  MAP=46637.721702  median=46637.880533
+chain MAP chi2 = 46637.721702  (DM-only, chi2_DM = -2 ln L_DM)

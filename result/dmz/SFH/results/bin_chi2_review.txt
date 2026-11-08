@@ -1,0 +1,16 @@
+mcmc_mode: dmz
+delay model: sfh
+igm_model: macquart
+chain burn-in: first 30% (15000 of 50000 steps) removed from every walker before flattening
+MCMC median from results.txt:  SFH
+posterior MAP (chain):         SFH  chain_chi2=47181.6124
+N_FRB = 3218  DM_EG min = 11.7118  DMMEAN = 578.492
+mu_host median=3.165000  MAP=3.154799
+sigma_host median=0.893000  MAP=0.895270
+DM_host mean median=35.294407  MAP=35.007184
+F median=0.496000  MAP=0.499998
+ln L_DM median=-23591.517884  MAP=-23590.806201
+chi2_DM median=47183.035768  MAP=47181.612402
+chi2_Cl(ell_eff): n/a (dmz)
+chi2_tot = chi2_DM  MAP=47181.612402  median=47183.035768
+chain MAP chi2 = 47181.612402  (DM-only, chi2_DM = -2 ln L_DM)

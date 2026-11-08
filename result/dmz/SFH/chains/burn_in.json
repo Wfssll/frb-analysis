@@ -1,0 +1,6 @@
+{
+  "n_steps": 50000,
+  "burn_in_frac": 0.3,
+  "burn_in_steps_per_walker": 15000,
+  "source": "backend"
+}

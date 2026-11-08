@@ -1,0 +1,96 @@
+{
+  "selection_source": "CHIME_selection/pdet_chime.npz",
+  "selection_sha256": "0053dc071d08788f348fb597d9db8ba784fa767a6f1d16c1da5d70e919d21608",
+  "simulation_source": "CHIME_selection/simulate_frb_data.py",
+  "redshift_interval": [
+    0.0,
+    5.0
+  ],
+  "selection_sample_interval": [
+    0.005,
+    4.995
+  ],
+  "selection_reference_probability": 0.2837982686603569,
+  "selection_reference_sample_z": 0.005,
+  "selection_display_normalization": "P_hat(z) = P_raw(z) / P_raw(first bin)",
+  "selection_boundary_convention": "Hold the first bin value from Z_MIN to the first bin centre; not an estimate of the physical probability at z=0",
+  "selection_upper_boundary": "Zero outside the tabulated support, matching native selected_nz; do not draw a spurious endpoint drop in P_hat",
+  "intrinsic_normalization": "Unit integral over the simulation redshift interval",
+  "unit_observed_definition": "n_f = n_int * P_hat / integral(n_int * P_hat dz)",
+  "product_observed_definition": "n_f = n_int * P_hat, without renormalization",
+  "prediction_kind": "Gaussian mean-delay illustration at fixed width; only tau_G=3 is a reference near joint medians; tau_G=1 and 5 are illustrative, not posterior estimates",
+  "delay_model": "gauss",
+  "sigma_G_Gyr": 2.5,
+  "tau_G_values_Gyr": [
+    1.0,
+    3.0,
+    5.0
+  ],
+  "sfh_year": 2017,
+  "models": {
+    "tau_1": {
+      "tau_G_Gyr": 1.0,
+      "sigma_G_Gyr": 2.5,
+      "role": "illustrative parameter variation",
+      "intrinsic_integral": 0.9999999999999999,
+      "observed_integral": 1.0,
+      "relative_detection_weight_integral": 0.0004879083591960816
+    },
+    "tau_3": {
+      "tau_G_Gyr": 3.0,
+      "sigma_G_Gyr": 2.5,
+      "role": "joint-near reference",
+      "intrinsic_integral": 1.0,
+      "observed_integral": 1.0000000000000002,
+      "relative_detection_weight_integral": 0.0007402909758223529
+    },
+    "tau_5": {
+      "tau_G_Gyr": 5.0,
+      "sigma_G_Gyr": 2.5,
+      "role": "illustrative parameter variation",
+      "intrinsic_integral": 0.9999999999999999,
+      "observed_integral": 0.9999999999999999,
+      "relative_detection_weight_integral": 0.0012884485316051624
+    }
+  },
+  "palette_rule": "Muted amber, scientific blue, muted rose; neutral grey selection",
+  "display_truncation": "Crop the view at z=3; retain unit normalization over the original simulation interval for comparison with the three-model figure",
+  "plotted_observed_normalization": "unit",
+  "display_range": [
+    0.0,
+    3.0
+  ],
+  "right_axis_scale": "log",
+  "colors": {
+    "tau_1": "#D49B32",
+    "tau_3": "#398EBA",
+    "tau_5": "#BE6895"
+  },
+  "legend_labels": [
+    "$\\tau_{\\rm G}=1\\,\\mathrm{Gyr}$",
+    "$\\tau_{\\rm G}=3\\,\\mathrm{Gyr}$",
+    "$\\tau_{\\rm G}=5\\,\\mathrm{Gyr}$",
+    "$n_{\\rm int}(z)$",
+    "$n_f(z)$",
+    "$P_{\\rm det}(z)$"
+  ],
+  "line_styles": {
+    "intrinsic": "solid",
+    "observed": "dashed",
+    "selection": "dash-dot"
+  },
+  "font": "Arial",
+  "math_font": "DejaVu Sans",
+  "axis_label_fontsize_pt": 17.0,
+  "tick_fontsize_pt": 13.0,
+  "legend_fontsize_pt": 13.0,
+  "width_inches": 7.2,
+  "height_inches": 4.8,
+  "selection_color": "#858B91",
+  "line_widths_pt": {
+    "intrinsic": 2.2,
+    "observed": 1.9,
+    "selection": 1.5
+  },
+  "typography_reference": "pz_goldblue.pdf"
+}

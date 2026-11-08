@@ -1,0 +1,16 @@
+mcmc_mode: dmz
+delay model: powerlaw
+igm_model: macquart
+chain burn-in: first 30% (15000 of 50000 steps) removed from every walker before flattening
+MCMC median from results.txt:  alpha=0.154000
+posterior MAP (chain):         alpha=0.142488  chain_chi2=46668.4660
+N_FRB = 3218  DM_EG min = 11.7118  DMMEAN = 578.492
+mu_host median=4.580000  MAP=4.583630
+sigma_host median=1.201000  MAP=1.204867
+DM_host mean median=200.577459  MAP=202.245468
+F median=0.132000  MAP=0.127964
+ln L_DM median=-23334.260627  MAP=-23334.233014
+chi2_DM median=46668.521255  MAP=46668.466027
+chi2_Cl(ell_eff): n/a (dmz)
+chi2_tot = chi2_DM  MAP=46668.466027  median=46668.521255
+chain MAP chi2 = 46668.466027  (DM-only, chi2_DM = -2 ln L_DM)

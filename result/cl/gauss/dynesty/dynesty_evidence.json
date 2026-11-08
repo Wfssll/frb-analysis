@@ -1,0 +1,59 @@
+{
+  "name": "frb_redshift",
+  "n_params": 6,
+  "param_names": [
+    "tau_gauss",
+    "sigma_gauss",
+    "b_frb",
+    "k_cut",
+    "N_ell",
+    "dm_host"
+  ],
+  "logZ": -24.747150022083854,
+  "logZ_err": 0.04396822278114145,
+  "chi2_min": 41.30094928164543,
+  "chi2_red": 0.8604364433676132,
+  "dof": 48,
+  "AIC": 53.30094928164543,
+  "BIC": 65.23485356103107,
+  "data_num": 54,
+  "dlogz_init": 0.01,
+  "maxcall": 600000,
+  "constraints": {
+    "tau_gauss": {
+      "median": 3.9270614465350633,
+      "minus": 2.4250540144659074,
+      "plus": 2.330345460482633
+    },
+    "sigma_gauss": {
+      "median": 5.154401198192469,
+      "minus": 2.3341230991494095,
+      "plus": 1.9409417571422196
+    },
+    "b_frb": {
+      "median": 1.0640238323364095,
+      "minus": 0.3108865063524565,
+      "plus": 0.41099728960054827
+    },
+    "k_cut": {
+      "median": 6.000039306744419,
+      "minus": 2.7869576817379764,
+      "plus": 2.7487275911628224
+    },
+    "N_ell": {
+      "median": 1.3377162881552014,
+      "minus": 0.455966390835297,
+      "plus": 0.4534265242647888
+    },
+    "dm_host": {
+      "median": 166.11067531681215,
+      "minus": 73.7332468561114,
+      "plus": 59.133333158053574
+    }
+  },
+  "dataset": "astra/cl",
+  "delay_model": "gauss",
+  "model": "gauss",
+  "mcmc_mode": "cl",
+  "cl_bandpower": true
+}

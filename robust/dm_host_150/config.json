@@ -1,0 +1,42 @@
+{
+  "round": 2,
+  "case": "dm_host_150",
+  "f_igm": 0.93,
+  "alpha": 1.8,
+  "e_cut": 3e+41,
+  "selection_dm_host": 150.0,
+  "ell_loc": 1000.0,
+  "fit_dm_host": true,
+  "dm_host_prior": [
+    50,
+    250
+  ],
+  "environment": {
+    "MCMC_MODE": "cl",
+    "DELAY_MODEL": "gauss",
+    "IGM_MODEL": "macquart",
+    "SFH_YEAR": "2017",
+    "MCMC_OUT_DIR": "runs/robust/dm_host_150/cl/gauss",
+    "PDET_FILE": "robust/dm_host_150/selection/pdet_chime.npz",
+    "CL_F_IGM": "0.93",
+    "MCMC_FIT_ELL_LOC": "0",
+    "MCMC_FIT_K_CUT": "1",
+    "MCMC_FIT_DM_HOST": "1",
+    "MCMC_FIT_B_FRB": "1",
+    "MCMC_FIT_BETA_FRB": "0",
+    "MCMC_FIT_B_E": "0",
+    "MCMC_FIT_F": "0",
+    "MCMC_BGS_KEEP": "0,1,2,3",
+    "MCMC_LRG_KEEP": "0,1,2,3",
+    "MCMC_CL_BANDPOWER": "1",
+    "MCMC_CL_BANDPOWER_NELL": "24",
+    "MCMC_CL_BANDPOWER_GRID": "log",
+    "MCMC_BURN_IN_FRAC": "0.3",
+    "MCMC_STEPS": "50000",
+    "MCMC_ADD_STEPS": "10000",
+    "MCMC_MAX_STEPS": "100000",
+    "MYMCMC_NCORES": "16",
+    "CL_DATA_FILE": "data/angular power spectrum/cl_dm_catalog.npz"
+  },
+  "historical_catalog_sha256": "b0efbd83870ea43a30225e2baebdad1a57084374308867ea83923c5e394df587"
+}

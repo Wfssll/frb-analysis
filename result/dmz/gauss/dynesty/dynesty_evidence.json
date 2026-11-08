@@ -1,0 +1,53 @@
+{
+  "name": "frb_dmz",
+  "n_params": 5,
+  "param_names": [
+    "tau_gauss",
+    "sigma_gauss",
+    "mu_host",
+    "sigma_host",
+    "F"
+  ],
+  "logZ": -23329.596025163057,
+  "logZ_err": 0.08737419109570158,
+  "chi2_min": 46636.18315391661,
+  "chi2_red": 14.510324565624334,
+  "dof": 3214,
+  "AIC": 46646.18315391661,
+  "BIC": 46676.567284073106,
+  "data_num": 3219,
+  "dlogz_init": 0.01,
+  "maxcall": 600000,
+  "constraints": {
+    "tau_gauss": {
+      "median": 2.944147408285209,
+      "minus": 0.41306465433313333,
+      "plus": 0.3415342927080225
+    },
+    "sigma_gauss": {
+      "median": 2.6247265342264474,
+      "minus": 0.4675628846776765,
+      "plus": 0.6161562387581307
+    },
+    "mu_host": {
+      "median": 3.892273668187876,
+      "minus": 0.22282451823074956,
+      "plus": 0.20430832847922886
+    },
+    "sigma_host": {
+      "median": 1.1691559936049003,
+      "minus": 0.0844128901321528,
+      "plus": 0.0758707442805302
+    },
+    "F": {
+      "median": 0.18074808188423291,
+      "minus": 0.02401924516282755,
+      "plus": 0.02928915594707779
+    }
+  },
+  "dataset": "astra/dmz",
+  "delay_model": "gauss",
+  "model": "gauss",
+  "mcmc_mode": "dmz",
+  "cl_bandpower": false
+}

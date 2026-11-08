@@ -1,0 +1,40 @@
+# delay model: lognormal
+# mcmc_mode: joint
+# igm_model: macquart
+# SFH: Madau & Fragos 2017
+# chain burn-in is 30% = 15000 of 50000 steps per walker
+delay_model  lognormal
+mcmc_mode  joint
+igm_model  macquart
+tau_NL  3.957000
+sigma_NL  0.708000
+mu_host  4.168000
+sigma_host  1.233000
+dm_host_mean  138.122987
+F  0.189000
+b_frb  1.283000
+b_e  1.000000
+ell_loc  1000.000000
+k_cut  5.812000
+k_cut_mpc_inv  5.812000
+N_ell  1.322000
+chi2_cl  42.504094
+chi2_dm  46638.020709
+chi2_tot  46680.524802
+fit_ell_loc  0
+fit_k_cut  1
+fit_n_ell  1
+fit_dm_host  0
+fit_b_frb  1
+fit_beta_frb  0
+fit_b_e  0
+fit_host_ln  1
+fit_host_gauss  0
+fit_F  1
+burn_in_frac  0.300
+burn_in_steps_per_walker  15000
+n_steps_per_walker  50000
+n_cl 54
+n_frb 3219
+n_data 3273
+samples BGS LRG DM

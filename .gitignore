@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+.cache/
+.mplconfig/
+runs/
+*.log
+*.out
+*.err
+*.h5
+temple/
+.ipynb_checkpoints/
+.DS_Store

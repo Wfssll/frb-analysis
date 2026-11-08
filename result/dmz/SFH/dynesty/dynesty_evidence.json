@@ -1,0 +1,41 @@
+{
+  "name": "frb_dmz",
+  "n_params": 3,
+  "param_names": [
+    "mu_host",
+    "sigma_host",
+    "F"
+  ],
+  "logZ": -23600.345528717186,
+  "logZ_err": 0.07330655500364958,
+  "chi2_min": 47181.61351179394,
+  "chi2_red": 14.670899723816524,
+  "dof": 3216,
+  "AIC": 47187.61351179394,
+  "BIC": 47205.843989887835,
+  "data_num": 3219,
+  "dlogz_init": 0.01,
+  "maxcall": 600000,
+  "constraints": {
+    "mu_host": {
+      "median": 3.167300151429332,
+      "minus": 0.10486955072509518,
+      "plus": 0.11200081395486716
+    },
+    "sigma_host": {
+      "median": 0.8934229109525267,
+      "minus": 0.042546171674968325,
+      "plus": 0.04158795770555779
+    },
+    "F": {
+      "median": 0.49603835630466303,
+      "minus": 0.006129492079346988,
+      "plus": 0.002965203920303583
+    }
+  },
+  "dataset": "astra/dmz",
+  "delay_model": "sfh",
+  "model": "sfh",
+  "mcmc_mode": "dmz",
+  "cl_bandpower": false
+}

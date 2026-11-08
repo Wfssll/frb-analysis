@@ -1,0 +1,47 @@
+{
+  "name": "frb_redshift",
+  "n_params": 4,
+  "param_names": [
+    "b_frb",
+    "k_cut",
+    "N_ell",
+    "dm_host"
+  ],
+  "logZ": -27.049945792573553,
+  "logZ_err": 0.04380440593086543,
+  "chi2_min": 44.9207962553568,
+  "chi2_red": 0.898415925107136,
+  "dof": 50,
+  "AIC": 52.9207962553568,
+  "BIC": 60.876732441613896,
+  "data_num": 54,
+  "dlogz_init": 0.01,
+  "maxcall": 600000,
+  "constraints": {
+    "b_frb": {
+      "median": 1.661598468562022,
+      "minus": 0.7999460928644535,
+      "plus": 0.6155912363390861
+    },
+    "k_cut": {
+      "median": 2.6870655587232823,
+      "minus": 1.7242660150925935,
+      "plus": 3.8691171241606073
+    },
+    "N_ell": {
+      "median": 1.2852591414499885,
+      "minus": 0.4396298061926638,
+      "plus": 0.4623413165001571
+    },
+    "dm_host": {
+      "median": 98.83503703454342,
+      "minus": 35.58143116930514,
+      "plus": 69.96967151072839
+    }
+  },
+  "dataset": "astra/cl",
+  "delay_model": "sfh",
+  "model": "sfh",
+  "mcmc_mode": "cl",
+  "cl_bandpower": true
+}

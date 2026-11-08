@@ -1,0 +1,37 @@
+# delay model: gauss
+# mcmc_mode: cl
+# igm_model: macquart
+# SFH: Madau & Fragos 2017
+# chain burn-in is 30% = 15000 of 50000 steps per walker
+delay_model  gauss
+mcmc_mode  cl
+igm_model  macquart
+tau_gauss  3.565000
+sigma_gauss  4.984000
+b_frb  1.062000
+b_e  1.000000
+ell_loc  500.000000
+k_cut  5.509000
+k_cut_mpc_inv  5.509000
+N_ell  1.330000
+dm_host  170.559000
+chi2_cl  42.729403
+chi2_dm  0.000000
+chi2_tot  42.729403
+fit_ell_loc  0
+fit_k_cut  1
+fit_n_ell  1
+fit_dm_host  1
+fit_b_frb  1
+fit_beta_frb  0
+fit_b_e  0
+fit_host_ln  0
+fit_host_gauss  0
+fit_F  0
+burn_in_frac  0.300
+burn_in_steps_per_walker  15000
+n_steps_per_walker  50000
+n_cl 54
+n_frb 0
+n_data 54
+samples BGS LRG DM
